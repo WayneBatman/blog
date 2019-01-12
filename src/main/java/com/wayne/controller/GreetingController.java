@@ -1,6 +1,8 @@
-package hello;
+package com.wayne.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
+
+import com.wayne.bean.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

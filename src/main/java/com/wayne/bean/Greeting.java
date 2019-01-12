@@ -1,4 +1,4 @@
-package hello;
+package com.wayne.bean;
 
 public class Greeting {
 
