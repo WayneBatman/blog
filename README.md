@@ -1,3 +1,2 @@
-# blog
-这是一个用于测试目的项目
-只是用于学习研究
+# generateJava
+利用属性生成对应的Dao以及Service文件
