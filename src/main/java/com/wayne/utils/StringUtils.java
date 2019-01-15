@@ -17,4 +17,12 @@ public class StringUtils {
             return false;
         }
     }
+
+    public static boolean equals(String s1, String s2) {
+        return s1 == null ? s2 == null : equals(s1.subSequence(0,s1.length()),s2.subSequence(0,s2.length()));
+    }
+
+    public static boolean equals(CharSequence cs1, CharSequence cs2) {
+        return cs1 == null ? cs2 == null : cs1.equals(cs2);
+    }
 }
