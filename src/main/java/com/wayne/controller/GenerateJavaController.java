@@ -1,15 +1,25 @@
 package com.wayne.controller;
 
+import com.wayne.bean.ClassMainProperty;
 import com.wayne.utils.FileUtils;
 import com.wayne.utils.ZipUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.util.zip.ZipOutputStream;
 
 @RestController
 public class GenerateJavaController extends BaseController{
+
+    @RequestMapping(value = "/generateJavaBean",method = RequestMethod.POST)
+    public ClassMainProperty generateJavaBean(
+            @RequestBody ClassMainProperty classMainProperty
+        ){
+
+
+
+        return classMainProperty;
+    }
 
     @RequestMapping("/downloadJavaFile")
     public void downloadJavaFile(){
